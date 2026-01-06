@@ -19,7 +19,7 @@ import {
   RotateCcw,
   Icon
 } from 'lucide-react';
-import { GoogleGenAI, LiveServerMessage, Modality } from '@google/genai';
+import { LiveServerMessage, Modality } from '@google/genai';
 import { Message } from '@/types';
 import { getGeminiResponse, getGeminiTTS } from '@/services/geminiService';
 import {ai} from "@/lib/gemini-config";
