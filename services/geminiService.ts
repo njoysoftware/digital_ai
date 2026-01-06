@@ -1,11 +1,15 @@
-"use client";
-import { GoogleGenAI, Modality } from "@google/genai";
+"use server";
+import { Modality } from "@google/genai";
 import { BAWASLU_SYSTEM_PROMPT } from "@/constants";
+import {ai} from "@/lib/gemini-config";
 
-export const ai = new GoogleGenAI({ apiKey: "AIzaSyCsSo-BhdnvmkSMSZ0KkYnPVFoXkZY9UME" });
-
-export const getGeminiResponse = async (prompt: string, history: {role: string, parts: {text: string}[]}[]) => {
-  
+export const getGeminiResponse = async (
+  prompt: string, 
+  history: 
+  { 
+    role: string, 
+    parts: {text: string}[]
+  }[]) => {
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",

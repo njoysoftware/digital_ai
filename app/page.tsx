@@ -21,7 +21,8 @@ import {
 } from 'lucide-react';
 import { GoogleGenAI, LiveServerMessage, Modality } from '@google/genai';
 import { Message } from '@/types';
-import { getGeminiResponse, getGeminiTTS,ai } from '@/services/geminiService';
+import { getGeminiResponse, getGeminiTTS } from '@/services/geminiService';
+import {ai} from "@/lib/gemini-config";
 import AIAvatar from '@/components/AIAvatar';
 import Link from 'next/link';
 import { BAWASLU_SYSTEM_PROMPT } from '@/constants';
