@@ -2,7 +2,7 @@
 import { GoogleGenAI, Modality } from "@google/genai";
 import { BAWASLU_SYSTEM_PROMPT } from "@/constants";
 
-export const ai = new GoogleGenAI({ apiKey: "AIzaSyDCarA0hGOzKDov5ChAKvWQOk6vA4J3lQ8" });
+export const ai = new GoogleGenAI({ apiKey: "AIzaSyCsSo-BhdnvmkSMSZ0KkYnPVFoXkZY9UME" });
 
 export const getGeminiResponse = async (prompt: string, history: {role: string, parts: {text: string}[]}[]) => {
   
