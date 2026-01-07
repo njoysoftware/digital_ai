@@ -152,8 +152,9 @@ Langkah umum:
 MIT License 
 
 NIZAR SURYAMAN
-© 2026 Digital AI
+© 2025 Digital AI
 
+untuk SKP tahun 2025
 ---
 
 > Dibangun dengan ❤️ menggunakan Next.js, Google GenAI, dan shadcn/ui
